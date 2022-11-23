@@ -271,6 +271,7 @@ main {
   border: none;
   font: inherit;
   letter-spacing: inherit;
+  background-color: var(--overlay-bg);
   color: inherit;
 }
 
