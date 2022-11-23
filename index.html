@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITC SaaS Assignment</title>
+  <meta name="description"
+    content="Responsive SaaS web-page implementation according to figma design by Oren Damien Shomrai" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&VerticalLine;Open+Sans:600&amp;display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="sidebar__inner">
+      <div class="sidebar__title top_bar divider_bottom">SaaS Kit</div>
+      <div class="dashboard">
+        <div class="dashboard__profile">
+          <img class="profile__avatar" src="./images/avatar/profile_photo.png" />
+          <div class="profile__details">
+            <p class="profile__details__username">Sierra Ferguson</p>
+            <p class="profile__details__email">s.ferguson@gmail.com</p>
+          </div>
+        </div>
+        <nav>
+          <ul class="dashboard__nav nav_menu">
+            <li class="dashboard__item">
+              <a class="selected_link">
+                <img class="dashboard__item__icon svg_to_img_hovered_filter"
+                  src="./images/dashboard/dashboard.svg" />
+                Dashboard
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="">
+                <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/tasks.svg" />
+                Tasks
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="">
+                <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/email.svg" />
+                Email
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="">
+                <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/contacts.svg" />
+                Contacts
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="">
+                <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/chat.svg" />
+                Chat
+              </a>
+            </li>
+            <li class="dashboard__item">
+              <a class="">
+                <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/deals.svg" />
+                Deals
+              </a>
+            </li>
+          </ul>
+          <div class="divider"></div>
+          <ul class="dashboard__nav nav_control">
+            <li class="dashboard__item">
+              <a>
+                <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/settings.svg" />
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="dashboard__item toggle_sidebar">
+        <a><img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/icon/action/toggle.svg" />Toggle
+          sidebar</a>
+      </div>
+    </div>
+  </aside>
+  <main>
+    <div class="search__bar top_bar divider_bottom">
+      <div class="search__bar__line">
+        <img src="./images/icon/other/search.svg" />
+        <input class="search__bar__line__input" type="text" placeholder="Global search" />
+      </div>
+      <div class="search__bar__notification">
+        <img src="./images/icon/other/notifications.svg" />
+        <span class="red-ellipse notification_ellipse"></span>
+      </div>
+    </div>
+    <div class="page">
+      <section class="page__main__widget tasks">
+        <div class="tasks__top divider_bottom">
+          <div class="tasks__top__inner">
+            <div class="widget__title">
+              <span class="widget__title__text">8 task completed out of 10</span>
+              <div class="widget__filter">
+                <label for="filter_select_tasks">Show:</label>
+                <div class="widget__filter__select">
+                  <select class="filter_select" name="filters" id="filter_select_tasks">
+                    <option value="current-week" selected="true">
+                      This week
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="progress__bar">
+              <div class="progress__bar__inner progress_base_layer">
+                <div class="progress__bar__inner progress_top_layer tasks_progress_percent"></div>
+              </div>
+
+            </div>
+            <p class="date__title">23 December, Sunday</p>
+            <div class="calendar__panel">
+              <div class="calendar__panel__inner">
+                <a class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek">Sun</p>
+                  <p class="calendar_panel_day_date date_current_highlight">23</p>
+                </a>
+                <a class="calendar__panel__day selected_link">
+                  <p class="calendar_panel_day_dayofweek">Mon</p>
+                  <p class="calendar_panel_day_date">24</p>
+                </a>
+                <a class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek">Tue</p>
+                  <p class="calendar_panel_day_date">25</p>
+                </a>
+                <a class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek">Wed</p>
+                  <p class="calendar_panel_day_date">26</p>
+                </a>
+                <a class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek">Thu</p>
+                  <p class="calendar_panel_day_date">27</p>
+                </a>
+                <a class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek">Fri</p>
+                  <p class="calendar_panel_day_date">28</p>
+                </a>
+                <a class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek">Sat</p>
+                  <p class="calendar_panel_day_date">29</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <a>
+              <div class="card__inner">
+                <div class="card__title">
+                  <p class="card__title__message">
+                    Send benefit review by Sunday
+                  </p>
+                  <span class="card__title__subject">Reminder</span>
+                </div>
+                <div class="card__subtitle">
+                  <p>
+                    <span class="card_subtitle_opacity">Due date:</span>
+                    December 23, 2018
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <div class="card__assignee">
+                    <img class="card__assignee__avatar" src="./images/avatar/avatar_tasks1.png" />
+                    <span class="card__assignee__name">George Fields</span>
+                  </div>
+                  <div class="card__status status_completed">
+                    <div class="card__status__action">
+                      <a><img class="action_edit svg_to_img_hovered_filter" src="./images/icon/action/edit.svg" /></a>
+                      <a><img class="action_delete" src="./images/icon/action/delete.svg" />
+                      </a>
+                    </div>
+                    <input type="button" class="btn__card__status" value="Completed" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a>
+              <div class="card__inner">
+                <div class="card__title">
+                  <p class="card__title__message">Invite to office meet-up</p>
+                  <span class="card__title__subject">Call</span>
+                </div>
+                <div class="card__subtitle">
+                  <p>
+                    <span class="card_subtitle_opacity">Due date:</span>
+                    December 23, 2018
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <div class="card__assignee">
+                    <img class="card__assignee__avatar" src="./images/avatar/avatar_tasks2.png" />
+                    <span class="card__assignee__name">Rebecca Moore</span>
+                  </div>
+                  <div class="card__status status_ended">
+                    <div class="card__status__action">
+                      <a>
+                        <img class="action_edit svg_to_img_hovered_filter" src="./images/icon/action/edit.svg" />
+                      </a>
+                      <a><img class="action_delete" src="./images/icon/action/delete.svg" />
+                      </a>
+                    </div>
+                    <input type="button" class="btn__card__status" value="Ended" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a>
+              <div class="card__inner">
+                <div class="card__title">
+                  <p class="card__title__message">Office meet-up</p>
+                  <span class="card__title__subject">Event</span>
+                </div>
+                <div class="card__subtitle">
+                  <p>
+                    <span class="card_subtitle_opacity">Due date:</span>
+                    December 23, 2018
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <div class="card__assignee">
+                    <img class="card__assignee__avatar" src="./images/avatar/avatar_tasks3.png" />
+                    <span class="card__assignee__name">Lindsey Stroud</span>
+                  </div>
+                  <div class="card__status status_completed">
+                    <div class="card__status__action">
+                      <a><img class="action_edit svg_to_img_hovered_filter" src="./images/icon/action/edit.svg" /></a>
+                      <a><img class="action_delete" src="./images/icon/action/delete.svg" /></a>
+                    </div>
+                    <input type="button" class="btn__card__status" value="Completed" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="cards__extend">
+          <a>Show more</a>
+        </div>
+      </section>
+      <section class="page__widgets tasks_widgets">
+        <div class="widget widget_deals">
+          <div class="widget__title divider_bottom">
+            <p class="widget__title__text">Deals</p>
+            <div class="widget__filter">
+              <label for="filter_select_deals">Show:</label>
+              <div class="widget__filter__select">
+                <select class="filter_select" name="filters" id="filter_select_deals">
+                  <option value="by-month" selected="true">Monthly</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="widget__content">
+            <ul class="widget__content__legend">
+              <li class="legend__item">
+                <span class="list_style_type_ellipse">Closed deals</span>
+              </li>
+            </ul>
+            <div class="widget__graph">
+              <img class="graph_img" src="./images/graph/deals_graph.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="widget widget_tasks_chart">
+          <div class="widget__title divider_bottom">
+            <p class="widget__title__text">Tasks</p>
+            <div class="widget__filter">
+              <label for="filter_select_deals">Show:</label>
+              <div class="widget__filter__select">
+                <select class="filter_select" name="filters" id="filter_select_deals">
+                  <option value="current-month" selected="true">
+                    This month
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="widget__content">
+            <div class="widget__graph">
+              <img class="graph_img tasks_graph" src="./images/graph/tasks_graph.svg" />
+            </div>
+            <ul class="widget__content__legend">
+              <li class="legend__item">
+                <span class="list_style_type_ellipse status_active">Active</span>
+              </li>
+              <li class="legend__item">
+                <span class="list_style_type_ellipse status_completed">Completed</span>
+              </li>
+              <li class="legend__item">
+                <span class="list_style_type_ellipse status_ended">Ended</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
