@@ -5,12 +5,14 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ITC SaaS Assignment</title>
   <meta name="description"
-    content="Responsive SaaS web-page implementation according to figma design by Oren Damien Shomrai" />
+    content="Responsive web implementation from a figma design of a SaaS web-page, by Damien Shomrai" />
+  <title>ITC SaaS Assignment</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&VerticalLine;Open+Sans:600&amp;display=swap"
-    rel="stylesheet" />
+  <link as="style" rel="stylesheet preload prefetch"
+    href="https://fonts.googleapis.com/css?family=Poppins:400,500&VerticalLine;Open+Sans:600&amp;display=swap" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
 </head>
 
 <body>
@@ -28,38 +30,37 @@
         <nav>
           <ul class="dashboard__nav nav_menu">
             <li class="dashboard__item">
-              <a class="selected_link">
-                <img class="dashboard__item__icon svg_to_img_hovered_filter"
-                  src="./images/dashboard/dashboard.svg" />
+              <a href="#" class="selected_link">
+                <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/dashboard.svg" />
                 Dashboard
               </a>
             </li>
             <li class="dashboard__item">
-              <a class="">
+              <a href="#" class="">
                 <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/tasks.svg" />
                 Tasks
               </a>
             </li>
             <li class="dashboard__item">
-              <a class="">
+              <a href="#" class="">
                 <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/email.svg" />
                 Email
               </a>
             </li>
             <li class="dashboard__item">
-              <a class="">
+              <a href="#" class="">
                 <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/contacts.svg" />
                 Contacts
               </a>
             </li>
             <li class="dashboard__item">
-              <a class="">
+              <a href="#" class="">
                 <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/chat.svg" />
                 Chat
               </a>
             </li>
             <li class="dashboard__item">
-              <a class="">
+              <a href="#" class="">
                 <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/deals.svg" />
                 Deals
               </a>
@@ -68,7 +69,7 @@
           <div class="divider"></div>
           <ul class="dashboard__nav nav_control">
             <li class="dashboard__item">
-              <a>
+              <a href="#">
                 <img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/dashboard/settings.svg" />
                 Settings
               </a>
@@ -77,15 +78,16 @@
         </nav>
       </div>
       <div class="dashboard__item toggle_sidebar">
-        <a><img class="dashboard__item__icon svg_to_img_hovered_filter" src="./images/icon/action/toggle.svg" />Toggle
+        <a href="#"><img class="dashboard__item__icon svg_to_img_hovered_filter"
+            src="./images/icon/action/toggle.svg" />Toggle
           sidebar</a>
       </div>
     </div>
   </aside>
-  <main>
+  <main class="main__page">
     <div class="search__bar top_bar divider_bottom">
       <div class="search__bar__line">
-        <img src="./images/icon/other/search.svg" />
+        <img class="search_icon" src="./images/icon/other/search.svg" />
         <input class="search__bar__line__input" type="text" placeholder="Global search" />
       </div>
       <div class="search__bar__notification">
@@ -119,32 +121,32 @@
             <p class="date__title">23 December, Sunday</p>
             <div class="calendar__panel">
               <div class="calendar__panel__inner">
-                <a class="calendar__panel__day">
-                  <p class="calendar_panel_day_dayofweek">Sun</p>
+                <a href="#" class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek opacity_50">Sun</p>
                   <p class="calendar_panel_day_date date_current_highlight">23</p>
                 </a>
-                <a class="calendar__panel__day selected_link">
-                  <p class="calendar_panel_day_dayofweek">Mon</p>
+                <a href="#" class="calendar__panel__day selected_link">
+                  <p class="calendar_panel_day_dayofweek opacity_50">Mon</p>
                   <p class="calendar_panel_day_date">24</p>
                 </a>
-                <a class="calendar__panel__day">
-                  <p class="calendar_panel_day_dayofweek">Tue</p>
+                <a href="#" class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek opacity_50">Tue</p>
                   <p class="calendar_panel_day_date">25</p>
                 </a>
-                <a class="calendar__panel__day">
-                  <p class="calendar_panel_day_dayofweek">Wed</p>
+                <a href="#" class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek opacity_50">Wed</p>
                   <p class="calendar_panel_day_date">26</p>
                 </a>
-                <a class="calendar__panel__day">
-                  <p class="calendar_panel_day_dayofweek">Thu</p>
+                <a href="#" class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek opacity_50">Thu</p>
                   <p class="calendar_panel_day_date">27</p>
                 </a>
-                <a class="calendar__panel__day">
-                  <p class="calendar_panel_day_dayofweek">Fri</p>
+                <a href="#" class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek opacity_50">Fri</p>
                   <p class="calendar_panel_day_date">28</p>
                 </a>
-                <a class="calendar__panel__day">
-                  <p class="calendar_panel_day_dayofweek">Sat</p>
+                <a href="#" class="calendar__panel__day">
+                  <p class="calendar_panel_day_dayofweek opacity_50">Sat</p>
                   <p class="calendar_panel_day_date">29</p>
                 </a>
               </div>
@@ -153,7 +155,7 @@
         </div>
         <div class="cards">
           <div class="card">
-            <a>
+            <a href="#">
               <div class="card__inner">
                 <div class="card__title">
                   <p class="card__title__message">
@@ -163,7 +165,7 @@
                 </div>
                 <div class="card__subtitle">
                   <p>
-                    <span class="card_subtitle_opacity">Due date:</span>
+                    <span class="opacity_50">Due date:</span>
                     December 23, 2018
                   </p>
                 </div>
@@ -174,8 +176,10 @@
                   </div>
                   <div class="card__status status_completed">
                     <div class="card__status__action">
-                      <a><img class="action_edit svg_to_img_hovered_filter" src="./images/icon/action/edit.svg" /></a>
-                      <a><img class="action_delete svg_to_img_hovered_filter" src="./images/icon/action/delete.svg" />
+                      <a href="#"><img class="action_edit svg_to_img_hovered_filter"
+                          src="./images/icon/action/edit.svg" /></a>
+                      <a href="#"><img class="action_delete svg_to_img_hovered_filter"
+                          src="./images/icon/action/delete.svg" />
                       </a>
                     </div>
                     <input type="button" class="btn__card__status" value="Completed" />
@@ -185,7 +189,7 @@
             </a>
           </div>
           <div class="card">
-            <a>
+            <a href="#">
               <div class="card__inner">
                 <div class="card__title">
                   <p class="card__title__message">Invite to office meet-up</p>
@@ -204,10 +208,11 @@
                   </div>
                   <div class="card__status status_ended">
                     <div class="card__status__action">
-                      <a>
+                      <a href="#">
                         <img class="action_edit svg_to_img_hovered_filter" src="./images/icon/action/edit.svg" />
                       </a>
-                      <a><img class="action_delete svg_to_img_hovered_filter" src="./images/icon/action/delete.svg" />
+                      <a href="#"><img class="action_delete svg_to_img_hovered_filter"
+                          src="./images/icon/action/delete.svg" />
                       </a>
                     </div>
                     <input type="button" class="btn__card__status" value="Ended" />
@@ -217,7 +222,7 @@
             </a>
           </div>
           <div class="card">
-            <a>
+            <a href="#">
               <div class="card__inner">
                 <div class="card__title">
                   <p class="card__title__message">Office meet-up</p>
@@ -236,8 +241,10 @@
                   </div>
                   <div class="card__status status_completed">
                     <div class="card__status__action">
-                      <a><img class="action_edit svg_to_img_hovered_filter" src="./images/icon/action/edit.svg" /></a>
-                      <a><img class="action_delete svg_to_img_hovered_filter" src="./images/icon/action/delete.svg" /></a>
+                      <a href="#"><img class="action_edit svg_to_img_hovered_filter"
+                          src="./images/icon/action/edit.svg" /></a>
+                      <a href="#"><img class="action_delete svg_to_img_hovered_filter"
+                          src="./images/icon/action/delete.svg" /></a>
                     </div>
                     <input type="button" class="btn__card__status" value="Completed" />
                   </div>
@@ -247,7 +254,7 @@
           </div>
         </div>
         <div class="cards__extend">
-          <a>Show more</a>
+          <a href="#">Show more</a>
         </div>
       </section>
       <section class="page__widgets tasks_widgets">
@@ -270,7 +277,8 @@
               </li>
             </ul>
             <div class="widget__graph">
-              <img class="graph_img" src="./images/graph/deals_graph.svg" />
+              <img class="graph__img graph_deals" alt="deals graph" src="./images/graph/deals_graph.svg" height="222px"
+                width="397px" />
             </div>
           </div>
         </div>
@@ -290,7 +298,8 @@
           </div>
           <div class="widget__content">
             <div class="widget__graph">
-              <img class="graph_img tasks_graph" src="./images/graph/tasks_graph.svg" />
+              <img class="graph__img graph_tasks" alt="tasks graph" src="./images/graph/tasks_graph.svg" height="232px"
+                width="232px" />
             </div>
             <ul class="widget__content__legend">
               <li class="legend__item">
